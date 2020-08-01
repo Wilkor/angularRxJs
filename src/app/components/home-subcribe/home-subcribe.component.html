@@ -6,7 +6,7 @@
         <input type="text" class="form-control" #valor placeholder="Valor">
       </div>
       <div class="form-group mx-sm-2">
-        <button type="button" class="btn btn-outline-primary" (click)="handleEmitiValeu(valor.value)">Emitir Valor</button>
+        <button type="button" class="btn btn-outline-primary" (click)="handleEmitiValeu(valor.value)">Buscar Dados</button>
       </div>
       <div class="form-group mx-sm-2">
         <button type="button" class="btn btn-outline-danger" (click)="destruirComponentes()">Mostrar / Destruir Componentes</button>
@@ -14,7 +14,9 @@
     </form>
   </div>
   <div class="row mt-4" *ngIf="mostrarComponentes" >
-     <app-poc-take class="col-md-4"></app-poc-take>
+    <app-sem-unsubscribe class="col-md-4"></app-sem-unsubscribe>
+     <app-take class="col-md-4"></app-take>
      <app-unsub class="col-md-4"></app-unsub>
-     <app-sem-unsubscribe class="col-md-4"></app-sem-unsubscribe>
+     <app-async class="col-md-4" ></app-async>
   </div>
+

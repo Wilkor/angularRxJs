@@ -4,9 +4,9 @@ import {SubscribeServiceService} from '../../subscribe-service.service';
 import {tap,take} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-poc-take',
-  templateUrl: './poc-take.component.html',
-  styleUrls: ['./poc-take.component.scss']
+  selector: 'app-take',
+  templateUrl: './take.component.html',
+  styleUrls: ['./take.component.scss']
 })
 export class PocTakeComponent implements OnInit, OnDestroy {
 
@@ -21,15 +21,16 @@ export class PocTakeComponent implements OnInit, OnDestroy {
 
      this.service.getValue()
      .pipe(
-       tap(v => console.log(this.nome, v)),
+       tap(value => console.log(this.nome, value)),
        take(1)
-     ).subscribe(novoValor => this.valor = novoValor)
+     ).subscribe(end => this.valor = end)
 
   }
 
   ngOnDestroy(){
 
    console.log(`${this.nome} foi destruido`);
+
     }
 
 }

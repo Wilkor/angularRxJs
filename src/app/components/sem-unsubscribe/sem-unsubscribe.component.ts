@@ -19,10 +19,10 @@ export class SemUnsubscribeComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
 
    this.service.getValue()
-   .subscribe(v => {
-     console.log(`${this.nome}`, v)
-     this.valor = v
+   .subscribe(end => {
 
+     console.log(`${this.nome}`, end)
+     this.valor = end
     }
      );
 

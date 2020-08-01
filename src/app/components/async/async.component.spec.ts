@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PocTakeComponent } from './poc-take.component';
+import { AsyncComponent } from './async.component';
 
-describe('PocTakeComponent', () => {
-  let component: PocTakeComponent;
-  let fixture: ComponentFixture<PocTakeComponent>;
+describe('AsyncComponent', () => {
+  let component: AsyncComponent;
+  let fixture: ComponentFixture<AsyncComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PocTakeComponent ]
+      declarations: [ AsyncComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PocTakeComponent);
+    fixture = TestBed.createComponent(AsyncComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

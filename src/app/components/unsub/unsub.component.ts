@@ -20,8 +20,8 @@ export class UnsubComponent implements OnInit, OnDestroy{
   ngOnInit(): void {
 
     this.sub.push(this.service.getValue()
-    .pipe(tap(v => console.log(`${this.nome}, ${v}`)))
-    .subscribe(novoValor => this.valor = novoValor))
+    .pipe(tap(value => console.log(`${this.nome}, ${value}`)))
+    .subscribe(end => this.valor = end))
   }
 
 

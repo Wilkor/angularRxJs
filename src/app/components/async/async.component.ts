@@ -10,7 +10,7 @@ import {tap} from 'rxjs/operators';
 })
 export class AsyncComponent implements OnInit, OnDestroy{
 
-  nome: string = 'Usando o Async';
+  nome: string = 'Componente com Async';
   valor$: Observable<string>;
 
   constructor(
@@ -26,6 +26,7 @@ export class AsyncComponent implements OnInit, OnDestroy{
 
   ngOnDestroy(): void {
 
+  console.log(`${this.nome} foi destruido`)
   }
 
 }

@@ -17,9 +17,9 @@ export class HomeSubcribeComponent implements OnInit {
   }
 
 
-  handleEmitiValeu(cep: string) {
+    getCep(cep: string) {
 
-    this.service.emiteValue(cep)
+    this.service.getCep(cep);
 
   }
 

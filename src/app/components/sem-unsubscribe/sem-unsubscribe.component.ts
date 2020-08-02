@@ -8,7 +8,7 @@ import {SubscribeServiceService} from '../../subscribe-service.service';
 })
 export class SemUnsubscribeComponent implements OnInit, OnDestroy{
 
-  nome: string = "Sem unsubscribe";
+  nome: string = "Componente sem unsubscribe";
   valor: string;
 
 

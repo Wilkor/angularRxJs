@@ -14,7 +14,7 @@ export class UnsubComponent implements OnInit, OnDestroy{
   constructor(private service: SubscribeServiceService) { }
 
  valor: string;
- nome: string = 'Usando o Unsubscribe';
+ nome: string = 'Compomente com Unsubscribe';
  sub: Subscription[] = [];
 
   ngOnInit(): void {

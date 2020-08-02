@@ -11,7 +11,7 @@ import {tap,take} from 'rxjs/operators';
 export class PocTakeComponent implements OnInit, OnDestroy {
 
   valor: string;
-  nome: string = "Usando take";
+  nome: string = "Componente usando take";
 
   constructor(
     private service: SubscribeServiceService
